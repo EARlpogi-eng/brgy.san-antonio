@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - Barangay San Antonio</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image\logo.png" alt="Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>               
+        <nav>
+            <ul id="MenuItems"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="population.html">Population</a></li>
+                <li><a href="officials.html">Officials</a></li>
+                <li id="admin-link"><a href="#" class="active">Admin</a></li>
+            </ul>
+        </nav>              
+        <img src="image/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" width="20px">
+    </header>
+
+    <div class="title-1">
+        <h1>Dashboard</h1>
+        <hr>
+    </div>
+
+    <div class="dashboard">
+        <div class="card card1">
+            <h3>Total Residents</h3>
+            <p>331</p>
+        </div>
+        <div class="card card2">
+            <h3>Service Requests</h3>
+            <p>0</p>
+        </div>
+        <div class="card card3">
+            <h3>Pending Announcements</h3>
+            <p>0</p>
+        </div>
+        <div class="card card4">
+            <h3>Issues Reported</h3>
+            <p>0</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <section id="population">
+                <h2>Population Management</h2>
+                <form id="population-form">
+                    <label for="resident-name">Resident Name:</label>
+                    <input type="text" id="resident-name" name="resident-name" required>
+                    
+                    <label for="resident-gender">Gender:</label>
+                    <select id="resident-gender" name="resident-gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="resident-birthday">Birthday:</label>
+                    <select id="resident-birthday" name="resident-birthday">
+                        <option value="">Select Date</option>
+                        <option value="none">None</option>
+                    </select>
+                    <input type="date" id="resident-birthday-date" name="resident-birthday-date">
+
+                    <label for="resident-zone">Zone:</label>
+                    <select id="resident-zone" name="resident-zone">
+                        <option value="1">Zone 1</option>
+                        <option value="2">Zone 2</option>
+                        <option value="3">Zone 3</option>
+                        <option value="4">Zone 4</option>
+                        <option value="5">Zone 5</option>
+                        <option value="6">Zone 6</option>
+                        <option value="7">Zone 7</option>
+                    </select>
+
+                    <button type="submit">Add Resident</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <div class="footer">
+        <div class="row-3">
+            <div class="col-3-footer">
+                <h1>Contact Us</h1>
+                <h3>barangaysanantonio24@gmail.com</h3>
+                <div class="row-3">
+                    <div class="col-2-footer">
+                        <img src="image\logo.png" alt="san antonio">
+                    </div>
+                    <div class="col-2-footer">
+                        <img src="image/Lopezlogo.png" alt="Lopez">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3-footer">
+                <div class="title">
+                    <h1>Barangay San Antonio</h1>
+                    <h2>Lopez, Quezon</h2>
+                </div>
+            </div>
+            <div class="col-3-footer">
+                <h3>Emergency Hotlines</h3>
+                <h5>MDRRMO</h5>
+                <p>Telephone no: (420)717-4364</p>
+                <p>Mobile no.: +639093410636</p>
+                <h5>PNP</h5>
+                <p>Telephone no.: (042)326-1269</p>
+                <p>Mobile no.: +639084898918</p>
+                <h5>BFP</h5>
+                <p>Telephone no.: (042)717-4459</p>
+                <p>Mobile no.:+63903271448</p>
+            </div>
+        </div>
+        <p>Copyright 2024. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

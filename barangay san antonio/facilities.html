@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brgy San Antonio</title>
+    <link rel="stylesheet" href="facilities.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image\logo.png" alt="Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>               
+        <nav>
+            <ul id="MenuItems"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="population.html">Population</a></li>
+                <li><a href="officials.html">Officials</a></li>
+                <li id="admin-link"><a href="#">Admin</a></li>
+            </ul>
+        </nav>              
+        <img src="image/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" width="20px">
+    </header>
+
+    <div class="title-2">
+        <h1>Facilities</h1>
+        <hr>
+    </div>
+
+    <section class="facilities">
+        <div class="facilities-left">
+            <video autoplay loop playsinline class="video">
+                <source src="video/brgy_assembly.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="facilities-right">
+            <h1>Barangay Hall</h1>
+            <hr>
+            <p>The Barangay Hall of San Antonio serves as the central hub for local governance and community activities.<span class="dots">...</span> <span class="more"> It houses the offices of the Barangay Captain and council, and it is where residents can access various public services and information.</span></p>
+            <p onclick="toggleReadMore(this)" class="myBtn">Read More</p>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <div class="facilities-left">
+            <video autoplay loop playsinline class="video">
+                <source src="video/center.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="facilities-right">
+            <h1>Health Center</h1>
+            <hr>
+            <p>The Health Center in Barangay San Antonio provides essential medical services to the community, including consultations, vaccinations, maternal and child care, and basic treatments.<span class="dots">...</span> <span class="more">It plays a crucial role in promoting health and wellness among residents.</span></p>
+            <p onclick="toggleReadMore(this)" class="myBtn">Read More</p>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <div class="facilities-left">
+            <video autoplay loop playsinline class="video">
+                <source src="video/court.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="facilities-right">
+            <h1>Covered Court</h1>
+            <hr>
+            <p>The Covered Court in Barangay San Antonio is a versatile venue for sports, community gatherings, and events.<span class="dots">...</span> <span class="more">It is often used for basketball games, cultural shows, and public meetings, providing a spacious and sheltered environment for various activities.</span></p>
+            <p onclick="toggleReadMore(this)" class="myBtn">Read More</p>
+        </div>
+    </section>
+
+
+    
+
+    <div class="footer">
+        <div class="row-3">
+            <div class="col-3-footer">
+                <h1>Contact Us</h1>
+                <h3>barangaysanantonio24@gmail.com</h3>
+                <div class="row-3">
+                    <div class="col-2-footer">
+                        <img src="image\logo.png" alt="san antonio">
+                    </div>
+                    <div class="col-2-footer">
+                        <img src="image/Lopezlogo.png" alt="Lopez">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3-footer">
+                <div class="title">
+                    <h1>Barangay San Antonio</h1>
+                    <h2>Lopez, Quezon</h2>
+                </div>
+            </div>
+            <div class="col-3-footer">
+                <h3>Emergency Hotlines</h3>
+                <h5>MDRRMO</h5>
+                <p>Telephone no: (420)717-4364</p>
+                <p>Mobile no.: +639093410636</p>
+                <h5>PNP</h5>
+                <p>Telephone no.: (042)326-1269</p>
+                <p>Mobile no.: +639084898918</p>
+                <h5>BFP</h5>
+                <p>Telephone no.: (042)717-4459</p>
+                <p>Mobile no.:+63903271448</p>
+            </div>
+        </div>
+        <p>Copyright 2024. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
